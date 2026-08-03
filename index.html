@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دورة بايثون</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="header-top">
+        <a class="site-brand" href="index.html" aria-label="Learning Python - الصفحة الرئيسية">
+            <img src="assets/learning-python-logo.png" alt="شعار Learning Python">
+            <span>Learning Python</span>
+        </a>
+        <button type="button" id="menu-toggle" class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <a class="nav-current" href="index.html" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+        <a href="https://wa.me/?text=Learning%20Python" target="_blank" rel="noopener" data-ar="مجموعة واتساب" data-en="WhatsApp Group">مجموعة واتساب</a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" data-ar="صفحة فيسبوك" data-en="Facebook Page">صفحة فيسبوك</a>
+        <a href="about.html" data-ar="من نحن" data-en="About Us">من نحن</a>
+        <button type="button" id="theme-toggle" class="nav-button" aria-label="تغيير وضع الموقع">
+            <i class="fa-solid fa-moon"></i>
+            <span data-ar="الوضع الداكن" data-en="Dark mode">الوضع الداكن</span>
+        </button>
+        <button type="button" id="language-toggle" class="nav-button language-button" aria-label="تغيير لغة الموقع">English</button>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- Course Progress -->
+    <div class="course-card">
+        <h1>My Course</h1>
+
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <p><strong>0%</strong> مكتمل</p>
+        <span id="firebase-status" class="firebase-status" role="status">جارٍ ربط التقدم بقاعدة البيانات...</span>
+    </div>
+
+    <!-- Search -->
+    <div class="search-box">
+        <input type="text" id="search" placeholder="Search by lesson title">
+        <button>
+            <i class="fa-solid fa-chevron-down"></i>
+        </button>
+    </div>
+
+    <section class="learning-path" aria-labelledby="learning-path-title">
+        <p data-ar="مسار التعلّم" data-en="Learning Path">مسار التعلّم</p>
+        <h2 id="learning-path-title" data-ar="تعلّم البرمجة بلغة Python" data-en="Learn Programming with Python">تعلّم البرمجة بلغة Python</h2>
+    </section>
+
+    <section class="programming-intro" aria-labelledby="programming-intro-title">
+        <span class="intro-icon"><i class="fa-solid fa-code"></i></span>
+        <div>
+            <p>الدرس التمهيدي</p>
+            <h2 id="programming-intro-title">ما هي البرمجة؟</h2>
+            <p class="intro-description">البرمجة هي كتابة تعليمات واضحة للحاسوب كي ينفّذ مهمة محددة؛ مثل معالجة البيانات أو بناء موقع أو أتمتة عمل متكرر. في هذا الدرس تتعرّف إلى طريقة التفكير المنطقي وتحويل المشكلة إلى خطوات قابلة للتنفيذ بلغة Python.</p>
+        </div>
+    </section>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>أساسيات Python</h2></div><div class="right"><span>0/10</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content open">
+            <div class="lesson active"><div class="timeline"><span class="circle current"></span></div><div class="lesson-info"><h3>الصياغة الأساسية</h3><p><i class="fa-solid fa-book"></i> Basic Syntax</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>المتغيرات وأنواع البيانات</h3><p><i class="fa-solid fa-cube"></i> Variables & Data Types</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>الجمل الشرطية</h3><p><i class="fa-solid fa-code-branch"></i> Conditionals</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>الحلقات التكرارية</h3><p><i class="fa-solid fa-rotate"></i> Loops</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>التحويل بين أنواع البيانات</h3><p><i class="fa-solid fa-right-left"></i> Type Casting</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>معالجة الاستثناءات</h3><p><i class="fa-solid fa-triangle-exclamation"></i> Exceptions</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>القوائم والـ Tuples والـ Sets</h3><p><i class="fa-solid fa-list"></i> Lists, Tuples & Sets</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>القواميس</h3><p><i class="fa-solid fa-table-list"></i> Dictionaries</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>الدوال</h3><p><i class="fa-solid fa-gears"></i> Functions</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>الدوال المدمجة</h3><p><i class="fa-solid fa-toolbox"></i> Built-in Functions</p></div></div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>هياكل البيانات والخوارزميات</h2></div><div class="right"><span>0/5</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content">
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>المصفوفات والقوائم المرتبطة</h3><p><i class="fa-solid fa-diagram-project"></i> Arrays & Linked Lists</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>جداول التجزئة</h3><p><i class="fa-solid fa-table-cells"></i> Hash Tables</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>الأكوام والمكدسات والطوابير</h3><p><i class="fa-solid fa-layer-group"></i> Heaps, Stacks & Queues</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>الأشجار والبحث الثنائي</h3><p><i class="fa-solid fa-sitemap"></i> Binary Search Trees</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>خوارزميات الفرز</h3><p><i class="fa-solid fa-arrow-down-a-z"></i> Sorting Algorithms</p></div></div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>مفاهيم Python المتقدمة</h2></div><div class="right"><span>0/5</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content">
+            <div class="lesson module-lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><div class="lesson-title-row"><h3>الوحدات Modules</h3><button class="module-toggle" type="button" aria-label="عرض أنواع الوحدات" aria-expanded="false"><i class="fa-solid fa-chevron-down"></i></button></div><p><i class="fa-solid fa-puzzle-piece"></i> وحدات مدمجة ووحدات مخصصة</p><div class="module-content"><div class="module-item"><i class="fa-solid fa-box"></i><div><strong>Built-in Modules</strong><span>وحدات جاهزة مثل math و datetime و random.</span></div></div><div class="module-item"><i class="fa-solid fa-code"></i><div><strong>Custom Modules</strong><span>إنشاء وحداتك الخاصة وإعادة استخدامها في المشاريع.</span></div></div></div></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>دوال Lambda</h3><p><i class="fa-solid fa-wand-magic-sparkles"></i> Lambdas</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Decorators</h3><p><i class="fa-solid fa-wand-magic-sparkles"></i> تزيين الدوال وتوسيعها</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Iterators</h3><p><i class="fa-solid fa-repeat"></i> التكرار على البيانات</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Regular Expressions</h3><p><i class="fa-solid fa-filter"></i> البحث ومطابقة الأنماط</p></div></div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>البرمجة كائنية التوجه</h2></div><div class="right"><span>0/3</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content">
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Classes</h3><p><i class="fa-solid fa-cubes"></i> إنشاء الكائنات والخصائص</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Inheritance</h3><p><i class="fa-solid fa-code-branch"></i> وراثة الأصناف وإعادة الاستخدام</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Methods و Dunder</h3><p><i class="fa-solid fa-gears"></i> دوال الأصناف والدوال الخاصة</p></div></div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>الحزم والبيئات والأدوات</h2></div><div class="right"><span>0/5</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content">
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>PyPI</h3><p><i class="fa-solid fa-box-open"></i> مستودع حزم Python</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Pip</h3><p><i class="fa-solid fa-download"></i> تثبيت وإدارة الحزم</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>uv</h3><p><i class="fa-solid fa-bolt"></i> مدير حزم سريع وحديث</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Conda</h3><p><i class="fa-solid fa-boxes-stacked"></i> إدارة البيئات والحزم</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Poetry</h3><p><i class="fa-solid fa-feather"></i> إدارة مشاريع Python</p></div></div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>مفاهيم Python المتقدمة 2</h2></div><div class="right"><span>0/6</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content">
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Common Packages</h3><p><i class="fa-solid fa-toolbox"></i> الحزم الشائعة في Python</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>pyproject.toml</h3><p><i class="fa-solid fa-file-code"></i> إعدادات المشروع وتبعياته</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>List Comprehensions</h3><p><i class="fa-solid fa-list-check"></i> إنشاء القوائم بأسلوب مختصر</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Generator Expressions</h3><p><i class="fa-solid fa-bolt"></i> توليد القيم بكفاءة</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Paradigms</h3><p><i class="fa-solid fa-shapes"></i> أنماط البرمجة</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Context Manager</h3><p><i class="fa-solid fa-folder-open"></i> إدارة الموارد باستخدام with</p></div></div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>تطوير تطبيقات الويب</h2></div><div class="right"><span>0/9</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content">
+            <section class="framework-group">
+                <h3 class="framework-group-title">Synchronous</h3>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Pyramid</h3><p><i class="fa-solid fa-globe"></i> إطار ويب متزامن</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Plotly Dash</h3><p><i class="fa-solid fa-chart-line"></i> تطبيقات البيانات التفاعلية</p></div></div>
+            </section>
+            <section class="framework-group">
+                <h3 class="framework-group-title">Asynchronous</h3>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>gevent</h3><p><i class="fa-solid fa-arrows-rotate"></i> برمجة غير متزامنة</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>aiohttp</h3><p><i class="fa-solid fa-cloud"></i> تطبيقات HTTP غير متزامنة</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Tornado</h3><p><i class="fa-solid fa-wind"></i> خادم ويب غير متزامن</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Sanic</h3><p><i class="fa-solid fa-bolt"></i> إطار ويب سريع</p></div></div>
+            </section>
+            <section class="framework-group">
+                <h3 class="framework-group-title">Synchronous + Asynchronous</h3>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>FastAPI</h3><p><i class="fa-solid fa-rocket"></i> واجهات API حديثة</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Django</h3><p><i class="fa-solid fa-layer-group"></i> إطار ويب متكامل</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Flask</h3><p><i class="fa-solid fa-flask"></i> إطار ويب خفيف</p></div></div>
+            </section>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>التزامن والبيئات</h2></div><div class="right"><span>0/7</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content">
+            <section class="framework-group">
+                <h3 class="framework-group-title">Concurrency</h3>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Multiprocessing</h3><p><i class="fa-solid fa-microchip"></i> تشغيل عمليات متوازية</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Asynchrony</h3><p><i class="fa-solid fa-arrows-rotate"></i> تنفيذ غير متزامن</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>GIL</h3><p><i class="fa-solid fa-lock"></i> Global Interpreter Lock</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Threading</h3><p><i class="fa-solid fa-link"></i> العمل بالخيوط</p></div></div>
+            </section>
+            <section class="framework-group">
+                <h3 class="framework-group-title">Environments</h3>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Pipenv</h3><p><i class="fa-solid fa-folder-tree"></i> إدارة البيئة والتبعيات</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>virtualenv</h3><p><i class="fa-solid fa-cube"></i> بيئات افتراضية معزولة</p></div></div>
+                <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>pyenv</h3><p><i class="fa-solid fa-code-branch"></i> إدارة إصدارات Python</p></div></div>
+            </section>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>Static Typing</h2></div><div class="right"><span>0/5</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content">
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>typing</h3><p><i class="fa-solid fa-tags"></i> تلميحات الأنواع في Python</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>mypy</h3><p><i class="fa-solid fa-check-double"></i> فحص الأنواع الثابت</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>pyright</h3><p><i class="fa-solid fa-magnifying-glass"></i> محلل أنواع سريع</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>pyre</h3><p><i class="fa-solid fa-shield-halved"></i> فحص الأنواع للمشاريع</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>Pydantic</h3><p><i class="fa-solid fa-certificate"></i> التحقق من البيانات بالأنواع</p></div></div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>Code Formatting</h2></div><div class="right"><span>0/3</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content">
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>ruff</h3><p><i class="fa-solid fa-wind"></i> تنسيق وفحص الشيفرة</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>black</h3><p><i class="fa-solid fa-paintbrush"></i> منسّق شيفرة تلقائي</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>yapf</h3><p><i class="fa-solid fa-align-left"></i> تنسيق Python المرن</p></div></div>
+        </div>
+    </div>
+
+    <div class="chapter">
+        <div class="chapter-header"><div class="left"><span class="chapter-check"></span><h2>الاختبارات</h2></div><div class="right"><span>0/5</span><button class="toggle"><i class="fa-solid fa-chevron-down"></i></button></div></div>
+        <div class="chapter-content">
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>tox</h3><p><i class="fa-solid fa-flask"></i> تشغيل الاختبارات في بيئات متعددة</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>nose</h3><p><i class="fa-solid fa-vial"></i> إطار اختبارات Python</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>unittest / pyUnit</h3><p><i class="fa-solid fa-check-double"></i> اختبارات الوحدة المدمجة</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>doctest</h3><p><i class="fa-solid fa-book-open"></i> اختبار الأمثلة داخل التوثيق</p></div></div>
+            <div class="lesson"><div class="timeline"><span class="circle"></span></div><div class="lesson-info"><h3>pytest</h3><p><i class="fa-solid fa-clipboard-check"></i> اختبارات مرنة وسهلة</p></div></div>
+        </div>
+    </div>
+
+    <section class="path-completion" aria-labelledby="path-completion-title">
+        <span class="completion-icon"><i class="fa-solid fa-flag-checkered"></i></span>
+        <p class="completion-label">نهاية المسار</p>
+        <h2 id="path-completion-title">أنت الآن جاهز لبناء مشاريع Python حقيقية</h2>
+        <p class="completion-description">بعد إكمال هذا المسار ستتمكن من كتابة برامج منظمة، التعامل مع البيانات، استخدام الحزم، اختبار الشيفرة، وبناء تطبيقات ويب. اختر تخصصك التالي وواصل التعلّم.</p>
+
+        <div class="related-roadmaps">
+            <p>Have a look at the following related roadmaps</p>
+            <div class="roadmap-cards">
+                <article class="roadmap-card"><i class="fa-solid fa-server"></i><h3>Backend</h3><span>بناء الخوادم وواجهات API</span></article>
+                <article class="roadmap-card"><i class="fa-solid fa-infinity"></i><h3>DevOps</h3><span>النشر والأتمتة والبنية التحتية</span></article>
+                <article class="roadmap-card"><i class="fa-solid fa-brain"></i><h3>AI / Data Science</h3><span>الذكاء الاصطناعي وتحليل البيانات</span></article>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<!-- JavaScript -->
+<script type="module" src="script.js"></script>
+
+</body>
+</html>

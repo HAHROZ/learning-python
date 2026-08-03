@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>من نحن</title>
+  <style>
+    :root { --ink: #17233a; --muted: #687386; --accent: #f26c4f; --surface: #fff8f1; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: #fffdfb; font-family: Tahoma, Arial, sans-serif; line-height: 1.9; }
+    header { padding: 90px 7%; text-align: center; background: var(--surface); }
+    .label { margin: 0 0 10px; color: var(--accent); font-size: .9rem; font-weight: bold; }
+    h1 { margin: 0; font-size: clamp(2.2rem, 6vw, 4rem); }
+    header p:last-child { max-width: 650px; margin: 18px auto 0; color: var(--muted); }
+    main { max-width: 960px; margin: auto; padding: 70px 28px; }
+    .story { display: grid; grid-template-columns: 1fr 1fr; gap: 55px; align-items: start; }
+    h2 { margin-top: 0; font-size: 1.9rem; }
+    .story p { color: var(--muted); }
+    .values { margin-top: 65px; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    article { padding: 25px; border: 1px solid #ece7e2; border-radius: 14px; background: #fff; }
+    h3 { margin: 0 0 8px; color: var(--accent); }
+    article p { margin: 0; color: var(--muted); font-size: .95rem; }
+    footer { padding: 25px; text-align: center; color: var(--muted); font-size: .85rem; }
+    @media (max-width: 700px) { .story, .cards { grid-template-columns: 1fr; } header { padding: 70px 25px; } main { padding: 50px 25px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="label">من نحن</p>
+    <h1>نحوّل الأفكار إلى أثرٍ حقيقي</h1>
+    <p>نحن فريق يجمع بين الإبداع والخبرة لنصنع تجارب رقمية بسيطة، جميلة، وقريبة من الناس.</p>
+  </header>
+
+  <main>
+    <section class="story">
+      <div>
+        <p class="label">قصتنا</p>
+        <h2>بدأنا برؤية واضحة</h2>
+      </div>
+      <div>
+        <p>انطلقنا من رغبة صادقة في مساعدة الأفراد والشركات على الانتقال من الفكرة إلى تجربة ناجحة. نستمع باهتمام، نفهم التحدي، ثم نعمل معاً لبناء حل يليق بطموحك.</p>
+        <p>نؤمن بأن أفضل النتائج تأتي من شراكة مبنية على الثقة والوضوح، لذلك نبقى قريبين في كل مرحلة من مراحل العمل.</p>
+      </div>
+    </section>
+
+    <section class="values">
+      <p class="label">ما يقودنا</p>
+      <h2>قيم نعمل بها كل يوم</h2>
+      <div class="cards">
+        <article><h3>الإبداع</h3><p>نبحث عن الأفكار الجديدة والحلول التي تصنع فرقاً ملموساً.</p></article>
+        <article><h3>الوضوح</h3><p>نتواصل بشفافية لتبقى جميع الخطوات مفهومة ومشتركة.</p></article>
+        <article><h3>النمو</h3><p>نتعلم ونتطور باستمرار لنواكب طموحك ومستقبل عملك.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 — جميع الحقوق محفوظة</footer>
+</body>
+</html>
